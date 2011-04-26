@@ -1,0 +1,12 @@
+<h2><%= @item.title %></h2>
+<p class="desc"><%= @item.desc %></p><br />
+<%= image_tag @item.image_preview.url(:small) %><br />
+Tags:
+<% @item.tags.each do |tag| %>
+<%= tag.content	%>
+<% end %>
+
+<% if current_user.id == @item.user_id %>
+<%= link_to "Delete", item_path(@item.id), :method=>:delete %> || 
+<%= link_to "Edit", edit_item_path %>
+<% end %>

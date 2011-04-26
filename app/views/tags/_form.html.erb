@@ -1,0 +1,6 @@
+<%= form.fields_for :tags do |tag_form| %>
+  <div class="field">
+    <%= tag_form.label :content, 'Tags' %>
+    <%= tag_form.text_field :content %>
+  </div>
+<% end %>
