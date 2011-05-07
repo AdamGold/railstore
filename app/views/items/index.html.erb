@@ -1,0 +1,12 @@
+<%= form_tag(search_path, :method => "get") do %>
+  <%= search_field_tag(:search) %>
+  <%= submit_tag("Search") %>
+<% end %>
+<% @items.each do |item| %>
+<% if item.visible %>
+<%= image_tag item.thumbnail.url, :width => "50", :height => "50" %>
+<h3><%= link_to item.title, item %></h3>
+<p><%= item.desc %></p>
+<% end %>
+<% end %>
+<%= will_paginate @items %>

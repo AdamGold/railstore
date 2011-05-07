@@ -1,0 +1,13 @@
+<div class="message" id="message-reply-<%= message.id %>">
+	<% @user = User.find(message.user_id) %>
+	<%=  @user.name  %>
+  <div class="created_at"><%= message.created_at.strftime("%B %d, %Y") %></div>
+  <div class="content">
+    <%= message.content %>
+  </div>
+	<% @message = Message.new(:parent_id => message) %>
+	
+	<div id='form-reply-<%= message.id %>' style='display: none'>
+		<%= render "message_form" %>
+	</div>
+</div>

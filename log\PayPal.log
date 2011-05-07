@@ -1,0 +1,25 @@
+# Logfile created on 2011-05-07 13:02:22 +0300 by logger.rb/25413
+
+
+Sat 05/07/11 13:02 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=20.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=80.0&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=galharth960@gmail.com
+
+
+Sat 05/07/11 13:02 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-07T03:02:23.934-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=54149c1b91364&responseEnvelope.build=1867348&error(0).errorId=589039&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The email address galharth960@gmail.com is invalid. It may not be registered in PayPal's system yet&error(0).parameter(0)=galharth960@gmail.com&error(0).parameter(1)=Sender Account not found
+
+
+Sat 05/07/11 13:08 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=20.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=80.0&receiverList.receiver[1].email=railsb_1304622209_per@gmail.com &receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304622257_biz@gmail.com 
+
+
+Sat 05/07/11 13:08 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-07T03:08:30.493-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=05ea5b8aeabf2&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail railsd_1304622257_biz@gmail.com  is invalid&error(0).parameter(0)=senderEmail&error(0).parameter(1)=railsd_1304622257_biz@gmail.com &error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: email railsb_1304622209_per@gmail.com  is invalid&error(1).parameter(0)=email&error(1).parameter(1)=railsb_1304622209_per@gmail.com 
+
+
+Sat 05/07/11 13:09 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=20.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=80.0&receiverList.receiver[1].email=railsb_1304622209_per@gmail.com &receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304622257_biz@gmail.com 
+
+
+Sat 05/07/11 13:09 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-07T03:09:35.261-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=78efe3a9fa6b6&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail railsd_1304622257_biz@gmail.com  is invalid&error(0).parameter(0)=senderEmail&error(0).parameter(1)=railsd_1304622257_biz@gmail.com &error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: email railsb_1304622209_per@gmail.com  is invalid&error(1).parameter(0)=email&error(1).parameter(1)=railsb_1304622209_per@gmail.com 

@@ -4,3 +4,12 @@ display:inline;
 label {
 	display: block;
 }
+.previous_page, .next_page { display: none; }
+
+#item_submit {
+	display: block;
+}
+
+.nested_messages {
+  margin-left: 30px;
+}

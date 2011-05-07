@@ -8,6 +8,13 @@ gem 'rails', '3.0.6'
 gem 'sqlite3'
 gem 'omniauth'
 gem 'paperclip'
+gem "will_paginate", "~> 3.0.pre2"
+gem 'dynamic_form'
+gem 'ancestry'
+gem 'rd_searchlogic', :require => 'searchlogic', :git => 'git://github.com/railsdog/searchlogic.git'
+gem "crummy", ">= 1.0.1"
+gem 'thumbs_up'
+gem "nifty-generators", :group => :development
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -31,3 +38,4 @@ gem 'paperclip'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "mocha", :group => :test

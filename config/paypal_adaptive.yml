@@ -1,0 +1,12 @@
+development:
+    environment: "sandbox"
+    username: "railsd_1304439789_biz@gmail.com"
+    password: "adamgal10"
+    signature: "AFcWxV21C7fd0v3bYYYRCpSSRl31ABqeKAnN1NRsAEXKxvGYvfhMUtJp"
+    application_id: "APP-80W284485P519543T"
+test:
+    environment: "sandbox"
+    username: "railsd_1304439789_biz@gmail.com"
+    password: "adamgal10"
+    signature: "AFcWxV21C7fd0v3bYYYRCpSSRl31ABqeKAnN1NRsAEXKxvGYvfhMUtJp"
+    application_id: "APP-80W284485P519543T"

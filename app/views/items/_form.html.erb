@@ -1,0 +1,54 @@
+<script type="text/javascript">
+jQuery(document).ready( function() {
+	if( ! jQuery('#item_license').is(':checked') ) {
+		jQuery('#price_wrap').css('display', 'none');
+	}
+	jQuery('#item_license').change( function() {
+		jQuery('#price_wrap').slideToggle(400, function() {
+			if( jQuery(this).is(':hidden') ) {
+				jQuery(this).find('input').attr('disabled', 'disabled');
+			} else {
+				jQuery(this).find('input').removeAttr('disabled');
+			}
+		});
+	});
+});
+</script>
+<% @item.tags.build %>
+<%= form_for @item, :html => { :multipart => true } do |i| %>
+<%= render "error_messages", :target => @item %>
+  <%= i.label :title %>
+  <%= i.text_field :title %><br />
+
+  <%= i.label :desc %>
+  <%= i.text_area :desc %><br />
+
+  <%= render :partial => 'tags/form',
+             :locals => {:form => i} %>
+
+	<%= i.label :gems_included %>
+	<%= i.text_field :gems_included %><br />
+	
+	<%= i.label :live_preview %>
+	<%= i.text_field :live_preview %><br />
+	
+	<%= i.label :thumbnail %>
+	<%= i.file_field :thumbnail %> <br />
+	
+	<%= i.label :image_preview %>
+	<%= i.file_field :image_preview %><br />
+	
+	<%= i.label :download %>
+	<%= i.file_field :download %><br />
+	
+	
+	<% if current_user.is_admin or request.fullpath.include? 'new' %>
+	<%= i.label :license  %>
+	<%= i.check_box :license %>Commercial Product
+	<div id="price_wrap">
+		<%= i.label :price %>
+		<%= i.text_field :price %>
+	</div>
+	<% end %>
+  <%= i.submit %>
+<% end %>

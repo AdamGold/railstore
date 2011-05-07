@@ -1,0 +1,14 @@
+<h2>Your Published Items</h2>
+<% current_user.items.each do |item|
+	if item.visible %>
+		<%= link_to item.title, item %><br />
+		<%
+	end
+end %>
+<h2>Your Upload Queue</h2>
+<% current_user.items.each do |item|
+	unless item.visible %>
+		<%= link_to item.title, item %><br />
+		<%
+	end
+end %>

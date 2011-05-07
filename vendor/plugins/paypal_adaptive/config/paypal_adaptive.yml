@@ -1,0 +1,20 @@
+development:
+  environment: "sandbox"
+  username: "railsd_1304436854_biz_api1.gmail.com"
+  password: "5BYEX2V4RPVKBW8S"
+  signature: "AFcWxV21C7fd0v3bYYYRCpSSRl31ABqeKAnN1NRsAEXKxvGYvfhMUtJp"
+  application_id: "APP-TEST"
+
+test:
+    environment: "sandbox"
+    username: "railsd_1304436854_biz_api1.gmail.com"
+    password: "5BYEX2V4RPVKBW8S"
+    signature: "AFcWxV21C7fd0v3bYYYRCpSSRl31ABqeKAnN1NRsAEXKxvGYvfhMUtJp"
+    application_id: "APP-TEST"
+
+production:
+  environment: "production"
+  username: "my_production_username"
+  password: "my_production_password"
+  signature: "my_production_signature"
+  application_id: "my_production_app_id"

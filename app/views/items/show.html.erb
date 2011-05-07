@@ -1,12 +1,41 @@
+<script type="text/javascript">
+	jQuery(document).ready( function() {
+		jQuery('.reply').click( function(e) {
+			e.preventDefault();
+			jQuery('#form-' + jQuery(this).attr('id')).slideToggle();
+		});
+	});
+</script>
+<% if ! @item.visible %>
+This item is currently on queue. It will not be public until we review it.
+<% end %>
 <h2><%= @item.title %></h2>
 <p class="desc"><%= @item.desc %></p><br />
-<%= image_tag @item.image_preview.url(:small) %><br />
+<%= image_tag @item.image_preview.url %><br />
 Tags:
-<% @item.tags.each do |tag| %>
-<%= tag.content	%>
+<% @item.tags.each do |tags| %>
+<% tags.content.to_s.split.each do |tag| %>
+<%= link_to tag, search_path + "/?search=" + tag %>
 <% end %>
-
-<% if current_user.id == @item.user_id %>
-<%= link_to "Delete", item_path(@item.id), :method=>:delete %> || 
+<% end %><br />
+<% if @item.price %>
+<%=
+@item.price
+%>$
+<%= link_to "Purchase", @item.paypal_url(@item, current_user, payment_notifications_url) %>
+<%= @item.payment_notifications %>
+<% end %>
+<%= link_to "Thumbs Up", thumbs_up_path %><%= @up %>
+<%= link_to "Thumbs Down", thumbs_down_path %><%= @down %><br />
+<% unless !current_user
+	if current_user.id == @item.user_id || current_user.is_admin %>
+<%= link_to "Delete", destroy_path, :method=>:delete %> <br />
 <%= link_to "Edit", edit_item_path %>
-<% end %>
+<% end
+end %>
+
+
+<%= nested_messages @messages.arrange(:order => :created_at) %>
+
+
+<%= render "message_form" %>
