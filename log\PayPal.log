@@ -1,25 +1,729 @@
-# Logfile created on 2011-05-07 13:02:22 +0300 by logger.rb/25413
+# Logfile created on 2011-05-05 19:17:24 +0300 by logger.rb/25413
 
 
-Sat 05/07/11 13:02 IDT- SENT:
-actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=20.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=80.0&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=galharth960@gmail.com
+Thu 05/05/11 19:17 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
 
 
-Sat 05/07/11 13:02 IDT- RECEIVED:
-responseEnvelope.timestamp=2011-05-07T03:02:23.934-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=54149c1b91364&responseEnvelope.build=1867348&error(0).errorId=589039&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The email address galharth960@gmail.com is invalid. It may not be registered in PayPal's system yet&error(0).parameter(0)=galharth960@gmail.com&error(0).parameter(1)=Sender Account not found
+Thu 05/05/11 19:17 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:17:23.866-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=8079a6f233f8b&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
 
 
-Sat 05/07/11 13:08 IDT- SENT:
-actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=20.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=80.0&receiverList.receiver[1].email=railsb_1304622209_per@gmail.com &receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304622257_biz@gmail.com 
+Thu 05/05/11 19:17 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
 
 
-Sat 05/07/11 13:08 IDT- RECEIVED:
-responseEnvelope.timestamp=2011-05-07T03:08:30.493-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=05ea5b8aeabf2&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail railsd_1304622257_biz@gmail.com  is invalid&error(0).parameter(0)=senderEmail&error(0).parameter(1)=railsd_1304622257_biz@gmail.com &error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: email railsb_1304622209_per@gmail.com  is invalid&error(1).parameter(0)=email&error(1).parameter(1)=railsb_1304622209_per@gmail.com 
+Thu 05/05/11 19:17 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:17:34.366-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=33840c4d3688a&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
 
 
-Sat 05/07/11 13:09 IDT- SENT:
-actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=20.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=80.0&receiverList.receiver[1].email=railsb_1304622209_per@gmail.com &receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304622257_biz@gmail.com 
+Thu 05/05/11 19:19 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
 
 
-Sat 05/07/11 13:09 IDT- RECEIVED:
-responseEnvelope.timestamp=2011-05-07T03:09:35.261-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=78efe3a9fa6b6&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail railsd_1304622257_biz@gmail.com  is invalid&error(0).parameter(0)=senderEmail&error(0).parameter(1)=railsd_1304622257_biz@gmail.com &error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: email railsb_1304622209_per@gmail.com  is invalid&error(1).parameter(0)=email&error(1).parameter(1)=railsb_1304622209_per@gmail.com 
+Thu 05/05/11 19:19 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:19:08.249-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=98ddddad4d75c&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:19 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:19 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:19:15.934-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=a58bf54c4f57f&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:19 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:19 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:19:32.526-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=960a930453649&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:19 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:19 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:19:44.590-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=6b748abc5656b&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:20 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:20 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:20:57.481-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=47bac1b9681ce&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:21 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:21 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:21:19.619-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=c579b5866d815&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:21 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:21 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:21:34.068-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=a67011d2710f2&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:21 IDT- SENT:
+actionType=PAY&cancelUrl=http%3A%2F%2Flocalhost%3A3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz%40gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960%40gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http%3A%2F%2Flocalhost%3A3000%2Fwebsamples%2Fap%2Fsetpaychained%2Fpay_details&senderEmail=railsd_1304438057_per%40gmail.com
+
+
+Thu 05/05/11 19:21 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:21:35.319-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=b83057457160a&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail railsd_1304438057_per%40gmail.com is invalid&error(0).parameter(0)=senderEmail&error(0).parameter(1)=railsd_1304438057_per%40gmail.com&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0&error(2).errorId=580022&error(2).domain=PLATFORM&error(2).subdomain=Application&error(2).severity=Error&error(2).category=Application&error(2).message=Invalid request parameter: email railsd_1304436854_biz%40gmail.com is invalid&error(2).parameter(0)=email&error(2).parameter(1)=railsd_1304436854_biz%40gmail.com&error(3).errorId=580022&error(3).domain=PLATFORM&error(3).subdomain=Application&error(3).severity=Error&error(3).category=Application&error(3).message=Invalid request parameter: email galharth960%40gmail.com is invalid&error(3).parameter(0)=email&error(3).parameter(1)=galharth960%40gmail.com
+
+
+Thu 05/05/11 19:24 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:24 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:24:23.533-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=d4908dcf9a714&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:24 IDT- SENT:
+actionType=PAY&cancelUrl=http%3A%2F%2Flocalhost%3A3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz%40gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960%40gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http%3A%2F%2Flocalhost%3A3000%2Fwebsamples%2Fap%2Fsetpaychained%2Fpay_details&senderEmail=railsd_1304438057_per%40gmail.com
+
+
+Thu 05/05/11 19:24 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:24:24.795-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=466981c29ac13&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail railsd_1304438057_per%40gmail.com is invalid&error(0).parameter(0)=senderEmail&error(0).parameter(1)=railsd_1304438057_per%40gmail.com&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0&error(2).errorId=580022&error(2).domain=PLATFORM&error(2).subdomain=Application&error(2).severity=Error&error(2).category=Application&error(2).message=Invalid request parameter: email railsd_1304436854_biz%40gmail.com is invalid&error(2).parameter(0)=email&error(2).parameter(1)=railsd_1304436854_biz%40gmail.com&error(3).errorId=580022&error(3).domain=PLATFORM&error(3).subdomain=Application&error(3).severity=Error&error(3).category=Application&error(3).message=Invalid request parameter: email galharth960%40gmail.com is invalid&error(3).parameter(0)=email&error(3).parameter(1)=galharth960%40gmail.com
+
+
+Thu 05/05/11 19:25 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:25 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:25:30.132-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=03fb4d71aab60&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:25 IDT- SENT:
+actionType=PAY&cancelUrl=http%3A%2F%2Flocalhost%3A3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz%40gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960%40gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http%3A%2F%2Flocalhost%3A3000%2Fwebsamples%2Fap%2Fsetpaychained%2Fpay_details&senderEmail=railsd_1304438057_per%40gmail.com
+
+
+Thu 05/05/11 19:25 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:25:31.406-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=8715d0efab03c&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail railsd_1304438057_per%40gmail.com is invalid&error(0).parameter(0)=senderEmail&error(0).parameter(1)=railsd_1304438057_per%40gmail.com&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0&error(2).errorId=580022&error(2).domain=PLATFORM&error(2).subdomain=Application&error(2).severity=Error&error(2).category=Application&error(2).message=Invalid request parameter: email railsd_1304436854_biz%40gmail.com is invalid&error(2).parameter(0)=email&error(2).parameter(1)=railsd_1304436854_biz%40gmail.com&error(3).errorId=580022&error(3).domain=PLATFORM&error(3).subdomain=Application&error(3).severity=Error&error(3).category=Application&error(3).message=Invalid request parameter: email galharth960%40gmail.com is invalid&error(3).parameter(0)=email&error(3).parameter(1)=galharth960%40gmail.com
+
+
+Thu 05/05/11 19:26 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:26 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:26:25.061-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=c4c9b1f5b81d3&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0
+
+
+Thu 05/05/11 19:26 IDT- SENT:
+actionType=PAY&cancelUrl=http%3A%2F%2Flocalhost%3A3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz%40gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=galharth960%40gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http%3A%2F%2Flocalhost%3A3000%2Fwebsamples%2Fap%2Fsetpaychained%2Fpay_details&senderEmail=railsd_1304438057_per%40gmail.com
+
+
+Thu 05/05/11 19:26 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:26:26.350-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=d6e405eab86af&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail railsd_1304438057_per%40gmail.com is invalid&error(0).parameter(0)=senderEmail&error(0).parameter(1)=railsd_1304438057_per%40gmail.com&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0&error(2).errorId=580022&error(2).domain=PLATFORM&error(2).subdomain=Application&error(2).severity=Error&error(2).category=Application&error(2).message=Invalid request parameter: email railsd_1304436854_biz%40gmail.com is invalid&error(2).parameter(0)=email&error(2).parameter(1)=railsd_1304436854_biz%40gmail.com&error(3).errorId=580022&error(3).domain=PLATFORM&error(3).subdomain=Application&error(3).severity=Error&error(3).category=Application&error(3).message=Invalid request parameter: amount must be greater than zero&error(3).parameter(0)=amount&error(3).parameter(1)=0&error(4).errorId=580022&error(4).domain=PLATFORM&error(4).subdomain=Application&error(4).severity=Error&error(4).category=Application&error(4).message=Invalid request parameter: email galharth960%40gmail.com is invalid&error(4).parameter(0)=email&error(4).parameter(1)=galharth960%40gmail.com
+
+
+Thu 05/05/11 19:28 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:28 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:28:23.317-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=f97bcf7bd4fe2&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0
+
+
+Thu 05/05/11 19:36 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:36 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:36:02.257-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=44806212450c5&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:37 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:37 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:36:59.311-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=e108c2db52fc5&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:37 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:37 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:37:48.050-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=be47ab895ee27&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:38 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:38 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:38:09.544-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=d1f2fe0964214&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:38 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:38 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:38:43.212-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=a20639d06c591&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:39 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:39 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:39:26.701-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=813a67e476f9c&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:39 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:39 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:39:43.092-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=b29ccdb77af8a&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:42 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:42 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:42:00.898-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=05c7cc6c9c9e1&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 19:48 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 19:48 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T09:48:02.655-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=b46aaf44f4f31&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:27 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:27 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:27:35.181-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=ee3d3582a74f6&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:27 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:27 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:27:36.510-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=429e0fa0a79ed&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:28 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:28 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:28:39.273-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=8d9685c1b6fbd&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:29 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:29 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:29:44.409-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=481e5eb9c6e55&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:30 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:30 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:30:07.188-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=98698fb2cc738&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:30 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:30 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:30:20.872-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=a49c4afecfc6d&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:31 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:31 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:31:17.591-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=28ff0f78dda74&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:31 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:31 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:31:34.770-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=199a1946e1d94&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:32 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:32 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:32:16.310-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=eabbca90ebfd5&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:32 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:32 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:32:33.781-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=11e7c5b5f0443&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:33 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:33 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:33:09.756-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=7ded174bf912b&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:33 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:33 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:33:31.892-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=37d94d56fe79b&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:34 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:34 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:34:43.904-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=ff7db9290fe7a&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:35 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:36 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:35:57.566-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=71c3bba72213f&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:36 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:36 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:36:19.429-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=a979c561276fe&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:36 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:36 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:36:29.713-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=15d6b6d029f22&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:37 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:37 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:37:42.024-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=2a0541693b9f2&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:38 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:38 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:38:39.366-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=e70a5f5349a6e&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:39 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:39 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:39:01.118-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=6ea260454edea&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:39 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:39 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:39:26.852-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=3cd85f06553f9&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:39 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:39 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:39:49.623-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=bb0d7edd5ad19&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:39 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:40 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:39:57.734-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=88853c225cc28&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:40 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:40 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:40:07.414-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=031d95bf5f2db&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:40 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:40 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:40:19.904-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=22c703eb62363&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:40 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:40 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:40:43.008-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=d119978a67e14&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:41 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=10&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:41 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:41:15.836-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=44e53e5a6fe82&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:41 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=10&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:41 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:41:34.910-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=8fb90933748f1&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:41 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=1&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=9&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:41 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:41:54.594-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=05becce579550&responseEnvelope.build=1867348&error(0).errorId=520009&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Account galharth960@gmail.com is restricted&error(0).parameter(0)=galharth960@gmail.com
+
+
+Thu 05/05/11 21:42 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:42 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:41:59.981-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=bc86f9877aad9&responseEnvelope.build=1867348&error(0).errorId=520009&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Account galharth960@gmail.com is restricted&error(0).parameter(0)=galharth960@gmail.com
+
+
+Thu 05/05/11 21:42 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=galharth960@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:42 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:42:11.231-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=c68e13cc7d697&responseEnvelope.build=1867348&error(0).errorId=520009&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Account galharth960@gmail.com is restricted&error(0).parameter(0)=galharth960@gmail.com
+
+
+Thu 05/05/11 21:42 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:42 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:42:43.096-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=eaf5518285145&responseEnvelope.build=1867348&error(0).errorId=579048&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The PayPal account railsd_1304439789_biz@gmail.com exceeds the sending limit&error(0).parameter(0)=railsd_1304439789_biz@gmail.com
+
+
+Thu 05/05/11 21:43 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=agoldesign@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:43 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:43:18.912-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=90a905a28df4a&responseEnvelope.build=1867348&error(0).errorId=520009&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Account agoldesign@gmail.com is restricted&error(0).parameter(0)=agoldesign@gmail.com
+
+
+Thu 05/05/11 21:43 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:43 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:43:32.486-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=7b0e5a0e913a9&responseEnvelope.build=1867348&error(0).errorId=579048&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The PayPal account railsd_1304439789_biz@gmail.com exceeds the sending limit&error(0).parameter(0)=railsd_1304439789_biz@gmail.com
+
+
+Thu 05/05/11 21:52 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsdpt@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:52 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:52:51.621-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=46a6a49319ecb&responseEnvelope.build=1867348&error(0).errorId=520009&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Account railsdpt@gmail.com is restricted&error(0).parameter(0)=railsdpt@gmail.com
+
+
+Thu 05/05/11 21:53 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=2&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:53 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:53:07.918-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=9ae228f81ded6&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:53 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=5&receiverList.receiver[1].email=railsd_1304438057_per@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:53 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:53:24.342-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=c4deb39621eb9&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0
+
+
+Thu 05/05/11 21:53 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304438057_per@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:53 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:53:30.051-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=ec9e6791234cf&responseEnvelope.build=1867348&error(0).errorId=579033&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The sender and each receiver must have different accounts&error(0).parameter(0)=railsd_1304438057_per@gmail.com&error(0).parameter(1)=railsd_1304438057_per@gmail.com&error(0).parameter(2)=2292703522893173967&error(0).parameter(3)=2292703522893173967&error(0).parameter(4)=Sender and receiver PayPal accounts must be unique.
+
+
+Thu 05/05/11 21:53 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304438057_per@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_biz@gmail.com
+
+
+Thu 05/05/11 21:53 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:53:41.328-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=1269c42c26104&responseEnvelope.build=1867348&error(0).errorId=589039&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The email address railsd_1304438057_biz@gmail.com is invalid. It may not be registered in PayPal's system yet&error(0).parameter(0)=railsd_1304438057_biz@gmail.com&error(0).parameter(1)=Sender Account not found
+
+
+Thu 05/05/11 21:54 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304438057_per@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304439789_biz@gmail.com
+
+
+Thu 05/05/11 21:54 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:54:18.535-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=b0b0f0d62f1ac&responseEnvelope.build=1867348&error(0).errorId=579048&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The PayPal account railsd_1304438057_per@gmail.com exceeds the sending limit&error(0).parameter(0)=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:54 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:55 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:54:59.106-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=2e89181f38fda&responseEnvelope.build=1867348&error(0).errorId=579048&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The PayPal account railsd_1304439789_biz@gmail.com exceeds the sending limit&error(0).parameter(0)=railsd_1304439789_biz@gmail.com
+
+
+Thu 05/05/11 21:55 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=
+
+
+Thu 05/05/11 21:55 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:55:25.466-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=3cb9f2c73f88d&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail cannot be blank&error(0).parameter(0)=senderEmail&error(0).parameter(1)=&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: senderEmail  is invalid&error(1).parameter(0)=senderEmail&error(1).parameter(1)=&error(2).errorId=580022&error(2).domain=PLATFORM&error(2).subdomain=Application&error(2).severity=Error&error(2).category=Application&error(2).message=Invalid request parameter: amount must be greater than zero&error(2).parameter(0)=amount&error(2).parameter(1)=0&error(3).errorId=580022&error(3).domain=PLATFORM&error(3).subdomain=Application&error(3).severity=Error&error(3).category=Application&error(3).message=Invalid request parameter: amount must be greater than zero&error(3).parameter(0)=amount&error(3).parameter(1)=0&error(4).errorId=580022&error(4).domain=PLATFORM&error(4).subdomain=Application&error(4).severity=Error&error(4).category=Application&error(4).message=Invalid request parameter: email cannot be blank&error(4).parameter(0)=email&error(4).parameter(1)=&error(5).errorId=580022&error(5).domain=PLATFORM&error(5).subdomain=Application&error(5).severity=Error&error(5).category=Application&error(5).message=Invalid request parameter: email  is invalid&error(5).parameter(0)=email&error(5).parameter(1)=
+
+
+Thu 05/05/11 21:59 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Thu 05/05/11 21:59 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T11:59:22.936-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=0d6a009579866&responseEnvelope.build=1867348&error(0).errorId=579048&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The PayPal account railsd_1304439789_biz@gmail.com exceeds the sending limit&error(0).parameter(0)=railsd_1304439789_biz@gmail.com
+
+
+Thu 05/05/11 22:05 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsb_1304622209_per@gmail.com
+
+
+Thu 05/05/11 22:05 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:05:15.309-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=4f675b6acf47b&responseEnvelope.build=1867348&payKey=AP-4AS552035K659890P&paymentExecStatus=CREATED
+
+
+Thu 05/05/11 22:06 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsb_1304622209_per@gmail.com
+
+
+Thu 05/05/11 22:06 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:06:18.317-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=fd38437ddef01&responseEnvelope.build=1867348&payKey=AP-37W422702K117791J&paymentExecStatus=CREATED
+
+
+Thu 05/05/11 22:06 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsb_1304622209_per@gmail.com
+
+
+Thu 05/05/11 22:06 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:06:24.629-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=9d0588b9e08dd&responseEnvelope.build=1867348&payKey=AP-88K527185U274535A&paymentExecStatus=CREATED
+
+
+Thu 05/05/11 22:06 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsb_1304622209_per@gmail.com
+
+
+Thu 05/05/11 22:06 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:06:34.144-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=caac42ebe2e09&responseEnvelope.build=1867348&payKey=AP-4LU53576JX609391D&paymentExecStatus=CREATED
+
+
+Thu 05/05/11 22:08 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsb_1304622209_per@gmail.com
+
+
+Thu 05/05/11 22:08 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:08:11.426-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=fc9488c3faa6d&responseEnvelope.build=1867348&payKey=AP-59H902776S153260G&paymentExecStatus=CREATED
+
+
+Thu 05/05/11 22:09 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=
+
+
+Thu 05/05/11 22:09 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:09:14.140-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=b9986d8c0a075&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail cannot be blank&error(0).parameter(0)=senderEmail&error(0).parameter(1)=&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: senderEmail  is invalid&error(1).parameter(0)=senderEmail&error(1).parameter(1)=&error(2).errorId=580022&error(2).domain=PLATFORM&error(2).subdomain=Application&error(2).severity=Error&error(2).category=Application&error(2).message=Invalid request parameter: amount must be greater than zero&error(2).parameter(0)=amount&error(2).parameter(1)=0&error(3).errorId=580022&error(3).domain=PLATFORM&error(3).subdomain=Application&error(3).severity=Error&error(3).category=Application&error(3).message=Invalid request parameter: amount must be greater than zero&error(3).parameter(0)=amount&error(3).parameter(1)=0&error(4).errorId=580022&error(4).domain=PLATFORM&error(4).subdomain=Application&error(4).severity=Error&error(4).category=Application&error(4).message=Invalid request parameter: email cannot be blank&error(4).parameter(0)=email&error(4).parameter(1)=&error(5).errorId=580022&error(5).domain=PLATFORM&error(5).subdomain=Application&error(5).severity=Error&error(5).category=Application&error(5).message=Invalid request parameter: email  is invalid&error(5).parameter(0)=email&error(5).parameter(1)=
+
+
+Thu 05/05/11 22:09 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsb_1304622209_per@gmail.com
+
+
+Thu 05/05/11 22:09 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:09:18.513-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=ccac06e50b0c0&responseEnvelope.build=1867348&payKey=AP-3FA85237650993358&paymentExecStatus=CREATED
+
+
+Thu 05/05/11 22:09 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsb_1304622209_per@gmail.com
+
+
+Thu 05/05/11 22:09 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:09:57.017-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=6cde3aeb146f2&responseEnvelope.build=1867348&payKey=AP-22N00249XG403022M&paymentExecStatus=CREATED
+
+
+Thu 05/05/11 22:11 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=
+
+
+Thu 05/05/11 22:11 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:11:18.695-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=6f5baaef28774&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail cannot be blank&error(0).parameter(0)=senderEmail&error(0).parameter(1)=&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: senderEmail  is invalid&error(1).parameter(0)=senderEmail&error(1).parameter(1)=&error(2).errorId=580022&error(2).domain=PLATFORM&error(2).subdomain=Application&error(2).severity=Error&error(2).category=Application&error(2).message=Invalid request parameter: amount must be greater than zero&error(2).parameter(0)=amount&error(2).parameter(1)=0&error(3).errorId=580022&error(3).domain=PLATFORM&error(3).subdomain=Application&error(3).severity=Error&error(3).category=Application&error(3).message=Invalid request parameter: amount must be greater than zero&error(3).parameter(0)=amount&error(3).parameter(1)=0&error(4).errorId=580022&error(4).domain=PLATFORM&error(4).subdomain=Application&error(4).severity=Error&error(4).category=Application&error(4).message=Invalid request parameter: email cannot be blank&error(4).parameter(0)=email&error(4).parameter(1)=&error(5).errorId=580022&error(5).domain=PLATFORM&error(5).subdomain=Application&error(5).severity=Error&error(5).category=Application&error(5).message=Invalid request parameter: email  is invalid&error(5).parameter(0)=email&error(5).parameter(1)=
+
+
+Thu 05/05/11 22:11 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=2&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=8&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsb_1304622209_per@gmail.com
+
+
+Thu 05/05/11 22:11 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-05T12:11:27.055-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=52e6e25d2a724&responseEnvelope.build=1867348&payKey=AP-3MW0323418400005G&paymentExecStatus=CREATED
+
+
+Fri 05/06/11 15:16 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=
+
+
+Fri 05/06/11 15:16 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:16:19.333-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=8f562a8dd24d8&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail cannot be blank&error(0).parameter(0)=senderEmail&error(0).parameter(1)=&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: senderEmail  is invalid&error(1).parameter(0)=senderEmail&error(1).parameter(1)=&error(2).errorId=580022&error(2).domain=PLATFORM&error(2).subdomain=Application&error(2).severity=Error&error(2).category=Application&error(2).message=Invalid request parameter: amount must be greater than zero&error(2).parameter(0)=amount&error(2).parameter(1)=0&error(3).errorId=580022&error(3).domain=PLATFORM&error(3).subdomain=Application&error(3).severity=Error&error(3).category=Application&error(3).message=Invalid request parameter: amount must be greater than zero&error(3).parameter(0)=amount&error(3).parameter(1)=0
+
+
+Fri 05/06/11 15:16 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=
+
+
+Fri 05/06/11 15:16 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:16:46.363-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=1f900b7ad8eb3&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail cannot be blank&error(0).parameter(0)=senderEmail&error(0).parameter(1)=&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: senderEmail  is invalid&error(1).parameter(0)=senderEmail&error(1).parameter(1)=&error(2).errorId=580022&error(2).domain=PLATFORM&error(2).subdomain=Application&error(2).severity=Error&error(2).category=Application&error(2).message=Invalid request parameter: amount must be greater than zero&error(2).parameter(0)=amount&error(2).parameter(1)=0&error(3).errorId=580022&error(3).domain=PLATFORM&error(3).subdomain=Application&error(3).severity=Error&error(3).category=Application&error(3).message=Invalid request parameter: amount must be greater than zero&error(3).parameter(0)=amount&error(3).parameter(1)=0
+
+
+Fri 05/06/11 15:17 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Fri 05/06/11 15:17 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:17:15.786-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=03f7fc0ce0187&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0
+
+
+Fri 05/06/11 15:18 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Fri 05/06/11 15:18 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:18:07.081-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=aaf9c248ec9f9&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0
+
+
+Fri 05/06/11 15:18 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Fri 05/06/11 15:18 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:18:37.665-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=8f077d63f41a4&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0
+
+
+Fri 05/06/11 15:19 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Fri 05/06/11 15:19 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:19:10.886-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=8718ddccfc321&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0
+
+
+Fri 05/06/11 15:19 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Fri 05/06/11 15:19 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:19:19.259-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=611e0e8ffe3e2&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0
+
+
+Fri 05/06/11 15:19 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Fri 05/06/11 15:19 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:19:34.028-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=ed167ba401dd2&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: amount must be greater than zero&error(0).parameter(0)=amount&error(0).parameter(1)=0&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: amount must be greater than zero&error(1).parameter(0)=amount&error(1).parameter(1)=0
+
+
+Fri 05/06/11 15:35 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=1.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=4.0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=
+
+
+Fri 05/06/11 15:35 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:35:26.679-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=bca94ba0ea78c&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail cannot be blank&error(0).parameter(0)=senderEmail&error(0).parameter(1)=&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: senderEmail  is invalid&error(1).parameter(0)=senderEmail&error(1).parameter(1)=
+
+
+Fri 05/06/11 15:35 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=1.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=4.0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=
+
+
+Fri 05/06/11 15:36 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:36:04.566-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=ad6641d1f3b87&responseEnvelope.build=1867348&error(0).errorId=580022&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=Invalid request parameter: senderEmail cannot be blank&error(0).parameter(0)=senderEmail&error(0).parameter(1)=&error(1).errorId=580022&error(1).domain=PLATFORM&error(1).subdomain=Application&error(1).severity=Error&error(1).category=Application&error(1).message=Invalid request parameter: senderEmail  is invalid&error(1).parameter(0)=senderEmail&error(1).parameter(1)=
+
+
+Fri 05/06/11 15:36 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=1.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=4.0&receiverList.receiver[1].email=railsd_1304439789_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Fri 05/06/11 15:36 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:36:31.866-07:00&responseEnvelope.ack=Failure&responseEnvelope.correlationId=0d0ada5ffa515&responseEnvelope.build=1867348&error(0).errorId=579048&error(0).domain=PLATFORM&error(0).subdomain=Application&error(0).severity=Error&error(0).category=Application&error(0).message=The PayPal account railsd_1304439789_biz@gmail.com exceeds the sending limit&error(0).parameter(0)=railsd_1304439789_biz@gmail.com
+
+
+Fri 05/06/11 15:36 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=1.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=4.0&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Fri 05/06/11 15:36 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:36:51.525-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=543c42afff176&responseEnvelope.build=1867348&payKey=AP-25W108367X7527210&paymentExecStatus=CREATED
+
+
+Fri 05/06/11 15:37 IDT- SENT:
+actionType=PAY&cancelUrl=http://localhost:3000&clientDetails.applicationId=APP-80W284485P519543T&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&feesPayer=EACHRECEIVER&memo=chained&receiverList.receiver[0].amount=1.0&receiverList.receiver[0].email=railsd_1304436854_biz@gmail.com&receiverList.receiver[0].primary[0]=false&receiverList.receiver[1].amount=4.0&receiverList.receiver[1].email=railsd_1304622257_biz@gmail.com&receiverList.receiver[1].primary[1]=true&requestEnvelope.errorLanguage=en_US&returnUrl=http://localhost:3000/websamples/ap/setpaychained/pay_details&senderEmail=railsd_1304438057_per@gmail.com
+
+
+Fri 05/06/11 15:37 IDT- RECEIVED:
+responseEnvelope.timestamp=2011-05-06T05:37:04.475-07:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=04ceb2e9024d2&responseEnvelope.build=1867348&payKey=AP-6WJ49251RD060631M&paymentExecStatus=CREATED
